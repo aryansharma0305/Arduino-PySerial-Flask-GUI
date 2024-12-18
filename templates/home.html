@@ -1,0 +1,61 @@
+{%extends 'base.html'%}
+
+{%block content %}
+
+<div class="row mx-auto px-auto" id="spinner">
+    <div class="col-auto mx-auto px-auto" style="height: 100vh;">
+        <div class="" style=" margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);">
+            <div class="spinner-border text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid" style="display: none;" id="content">
+
+    
+
+    <div class="row">
+        <div class="col-auto mx-auto my-4">
+            <h2>Arduino GUI</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 mx-auto">
+            <div class="row text-center text-white  ">
+                <div class="col-lg-3 col-sm-6 border bg-success py-3" id="led1indicator"><h5>LED 1</h5></div>
+                
+                <div class="col-lg-3  col-sm-6 border bg-danger py-3" id="led2indicator"><h5>LED 2</h5></div>
+                
+                <div class="col-lg-3 col-sm-6 border bg-success py-3" id="led3indicator"><h5>LED 3</h5></div>
+                
+                <div class="col-lg-3 col-sm-6 border  bg-danger py-3" id="led4indicator"><h5>LED 4</h5></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6 mx-auto py-3">
+            <div class="row text-center text-white  ">
+                <div class="col-lg-3 col-sm-6"><button type="button" id="btn1" onclick="btn1()" class="btn btn-secondary">Start/Stop</button></div>
+                
+                <div class="col-lg-3 col-sm-6 "><button type="button" id="btn2" onclick="btn2()" class="btn btn-secondary">Start/Stop</button></div>
+                
+                <div class="col-lg-3 col-sm-6"><button type="button" id="btn3" onclick="btn3()" class="btn btn-secondary">Start/Stop</button></div>
+                
+                <div class="col-lg-3 col-sm-6 "><button type="button" id="btn4" onclick="btn4()" class="btn btn-secondary">Start/Stop</button></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="/static/home.js"></script>
+
+{%endblock%}
