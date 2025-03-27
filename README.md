@@ -33,8 +33,6 @@ The web app will be available at:
 ---
 
 
----
-
 ## 🎮 Usage
 1️⃣ Open **http://127.0.0.1:5000/** in your browser.  
 2️⃣ Click buttons to send commands to Arduino.  
